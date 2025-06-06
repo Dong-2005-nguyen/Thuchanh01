@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Khảo sát ý kiến người dùng</title>
+</head>
+<body>
+  <h2>Khảo sát ý kiến người dùng</h2>
+  <form action="#" method="post">
+    
+    <!-- Họ tên -->
+    <label for="name">Họ và tên:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <!-- Giới tính (radio) -->
+    <label>Giới tính:</label><br>
+    <input type="radio" id="male" name="gender" value="Nam">
+    <label for="male">Nam</label><br>
+    <input type="radio" id="female" name="gender" value="Nữ">
+    <label for="female">Nữ</label><br>
+    <input type="radio" id="other" name="gender" value="Khác">
+    <label for="other">Khác</label><br><br>
+
+    <!-- Sở thích (checkbox) -->
+    <label>Sở thích:</label><br>
+    <input type="checkbox" id="reading" name="hobbies" value="Đọc sách">
+    <label for="reading">Đọc sách</label><br>
+    <input type="checkbox" id="travel" name="hobbies" value="Du lịch">
+    <label for="travel">Du lịch</label><br>
+    <input type="checkbox" id="music" name="hobbies" value="Nghe nhạc">
+    <label for="music">Nghe nhạc</label><br>
+    <input type="checkbox" id="sports" name="hobbies" value="Thể thao">
+    <label for="sports">Thể thao</label><br><br>
+
+    <!-- Mức độ hài lòng (select) -->
+    <label for="satisfaction">Bạn đánh giá mức độ hài lòng với dịch vụ:</label><br>
+    <select id="satisfaction" name="satisfaction">
+      <option value="Rất hài lòng">Rất hài lòng</option>
+      <option value="Hài lòng">Hài lòng</option>
+      <option value="Bình thường">Bình thường</option>
+      <option value="Không hài lòng">Không hài lòng</option>
+    </select><br><br>
+
+    <!-- Ý kiến đóng góp (textarea) -->
+    <label for="feedback">Ý kiến đóng góp:</label><br>
+    <textarea id="feedback" name="feedback" rows="5" cols="40" placeholder="Nhập ý kiến của bạn..."></textarea><br><br>
+
+    <input type="submit" value="Gửi khảo sát">
+  </form>
+</body>
+</html>
