@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Đặt Bàn Quán Ăn</title>
+</head>
+<body>
+  <h2>Đặt Bàn Quán Ăn</h2>
+  <form action="#" method="post">
+    
+    <!-- Họ tên -->
+    <label for="name">Họ và tên:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <!-- Số người -->
+    <label for="people">Số người:</label><br>
+    <input type="number" id="people" name="people" min="1" max="50" required><br><br>
+
+    <!-- Ngày giờ -->
+    <label for="datetime">Ngày và giờ đặt bàn:</label><br>
+    <input type="datetime-local" id="datetime" name="datetime" required><br><br>
+
+    <!-- Yêu cầu đặc biệt -->
+    <label for="request">Yêu cầu đặc biệt:</label><br>
+    <textarea id="request" name="request" rows="4" cols="40" placeholder="Ví dụ: cần phòng riêng, không hút thuốc, sinh nhật..."></textarea><br><br>
+
+    <input type="submit" value="Đặt bàn">
+  </form>
+</body>
+</html>
