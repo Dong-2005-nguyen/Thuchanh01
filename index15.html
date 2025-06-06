@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Thanh Toán Đơn Hàng</title>
+</head>
+<body>
+  <h2>Thông Tin Thanh Toán</h2>
+  <form action="#" method="post">
+    
+    <!-- Thông tin cá nhân -->
+    <label for="fullname">Họ và tên:</label><br>
+    <input type="text" id="fullname" name="fullname" required><br><br>
+
+    <label for="phone">Số điện thoại:</label><br>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{10,11}" required><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email"><br><br>
+
+    <!-- Địa chỉ -->
+    <label for="address">Địa chỉ giao hàng:</label><br>
+    <textarea id="address" name="address" rows="4" cols="40" placeholder="Số nhà, đường, phường/xã, quận/huyện, tỉnh/thành" required></textarea><br><br>
+
+    <!-- Hình thức thanh toán -->
+    <label>Hình thức thanh toán:</label><br>
+    <input type="radio" id="cod" name="payment_method" value="COD" required>
+    <label for="cod">Thanh toán khi nhận hàng (COD)</label><br>
+
+    <input type="radio" id="bank" name="payment_method" value="Bank Transfer">
+    <label for="bank">Chuyển khoản ngân hàng</label><br>
+
+    <input type="radio" id="card" name="payment_method" value="Credit Card">
+    <label for="card">Thẻ tín dụng/Ghi nợ</label><br><br>
+
+    <input type="submit" value="Xác nhận thanh toán">
+  </form>
+</body>
+</html>
