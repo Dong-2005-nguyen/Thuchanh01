@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Gửi Phản Hồi Khách Hàng</title>
+</head>
+<body>
+  <h2>Gửi Phản Hồi Khách Hàng</h2>
+  <form action="#" method="post">
+
+    <!-- Đánh giá sao -->
+    <label>Đánh giá của bạn (1–5 sao):</label><br>
+    <input type="radio" id="star1" name="rating" value="1">
+    <label for="star1">1 ⭐</label><br>
+    <input type="radio" id="star2" name="rating" value="2">
+    <label for="star2">2 ⭐⭐</label><br>
+    <input type="radio" id="star3" name="rating" value="3">
+    <label for="star3">3 ⭐⭐⭐</label><br>
+    <input type="radio" id="star4" name="rating" value="4">
+    <label for="star4">4 ⭐⭐⭐⭐</label><br>
+    <input type="radio" id="star5" name="rating" value="5">
+    <label for="star5">5 ⭐⭐⭐⭐⭐</label><br><br>
+
+    <!-- Ý kiến phản hồi -->
+    <label for="feedback">Ý kiến phản hồi:</label><br>
+    <textarea id="feedback" name="feedback" rows="5" cols="40" placeholder="Nhập ý kiến của bạn..." required></textarea><br><br>
+
+    <!-- Email -->
+    <label for="email">Email liên hệ (tuỳ chọn):</label><br>
+    <input type="email" id="email" name="email" placeholder="you@example.com"><br><br>
+
+    <input type="submit" value="Gửi phản hồi">
+  </form>
+</body>
+</html>
